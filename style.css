@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 10vw;
+    background-color: #fff0dd;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    background-color: #b2454a;
+    background-image: url(assets/popular_bg.png);
+    background-position: top center;
+    background-size: cover;
+    padding: 50px 100px;
+    height: 100vh;
+}
+
+.design-wrapper {
+    position: relative;
+    height: 100vh;
+}
+
+.inbox-wrapper {
+    background-color: #b2454a;
+    height: 70vh;
+    background-image: url(assets/subscribe_bg.png);
+    background-position: top center;
+    background-size: cover;
+    padding: 50px 100px;
+    display: grid;
+    place-items: center;
+    /* gap: 30px;    */
+    color: #fff;
+}
+
+.footer-wrapper {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    padding: 30px 40px; */
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+/* HEADING-SECTION */
+
+/* LOGO & NAVIGATION */
+.logo {
+    background-color: #b2454a;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.3rem;
+    padding: 20px 0;
+    padding-left: 30px;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    padding-left: 150px;
+}
+
+.navigation a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 350ms ease;
+}
+
+.navigation a:hover {
+    width: 100%;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: grey;
+}
+
+.navigation a:focus {
+    outline: 2.5px solid rgb(85, 85, 85);
+    outline-offset: 2px;
+}
+
+/* HERO SECTION */
+.main-hero {
+    font-size: 6.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b2454a;
+    padding-left: 20px;
+    display: grid;
+    place-items: end start;
+}
+
+.hero-text-wrapper {
+    display: grid;
+    grid-gap: 40px;
+}
+
+.hero-wrapper {
+    display: grid;
+    grid-gap: 30px;
+    padding: 60px 100px;
+}
+
+.hero-title {
+    font-size: 3.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-text {
+    font-size: 0.9rem;
+    color: #6a6a6a;
+}
+
+.order-wrapper {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    align-items: center;
+    gap: 40px;
+}
+
+.order1 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: grid;
+    place-items: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.order2 {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    /* gap: 10px; */
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.order2 .play {
+    width: 45px;
+}
+
+.customer-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 60px;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 100px;
+}
+
+.customer-count {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+}
+
+.customer-count span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    color: #6a6a6a;
+}
+
+.customer-rating {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    border-left: 1px solid rgba(2, 2, 2, 0.416);
+    padding-left: 30px;
+    gap: 10px;
+}
+
+.rating {
+    font-size: 0.85rem;
+    color: #6a6a6a;
+}
+.user {
+    width: 2rem;
+}
+
+.main-meal {
+    width: 450px;
+    position: absolute;
+    top: 45px;
+}
+
+/* ABOUT SECTION */
+.about-image-wrapper {
+    position: relative;
+}
+.about-image1 {
+    background-image: url(assets/about_bg1.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 50px;
+    margin-bottom: 10px;
+}
+
+.about-img1 {
+    width: 135px;
+}
+
+.learnmore {
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    position: absolute;
+    right: 0;
+    top: 230px;
+    padding: 10px 20px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-image {
+    background-image: url(assets/about_bg2.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 65px 50px;
+    margin-top: 10px;
+}
+
+.about-img {
+    width: 150px;
+}
+
+.about-text-wrapper {
+    padding: 100px;
+    display: grid;
+    gap: 30px;
+}
+
+.about-title {
+    color: #b2454a;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.about-text {
+    font-size: 3.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-paragraph {
+    color: #6a6a6a;
+}
+
+/* MENU SECTION */
+.menu-title {
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.food-menu, .food-menu-item {
+    display: grid;
+    align-items: center;
+    gap: 50px;
+}
+
+.food-menu {
+    grid-template-columns: repeat(6, auto);
+}
+
+.active {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #b2454a;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.food-menu-item {
+    gap: 6px;
+    grid-template-columns: auto auto;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 40px;
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+
+.food-menu-item:hover {
+    background-color: #fff;
+    color: #b2454a;
+}
+
+.other {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 40px;
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+
+.other:hover {
+    background-color: #fff;
+    color: #b2454a;
+}
+
+.food-menu-item .menu-img {
+    width: 20px;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    place-items: center;
+    gap: 30px;
+}
+
+.arrow {
+    padding: 8px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.05);
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.arrow-img {
+    width: 15px;
+}
+
+.secondary {
+    display: grid;
+    gap: 30px;
+    place-items: center;
+    background-color: rgb(255, 255, 255, 0.05);
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    width: 200px;
+    padding: 20px 0;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+
+.secondary:hover {
+    transform: scale(1.2);
+}
+
+.primary {
+    width: 280px;
+    background-color: #fff;
+    display: grid;
+    gap: 30px;
+    place-items: center;
+    border: 1px solid #b2454a;
+    padding: 30px 0;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.secondary-rating {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    gap: 30px;
+}
+
+.sec-sec {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 8px;
+}
+
+.secondary-img {
+    width: 90px;
+}
+
+.primary-img {
+    width: 130px;
+}
+
+.sec-star {
+    width: 12px;
+}
+
+.explore-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    /* place-items: center; */
+    align-items: center;
+    background-color: #000;
+    padding: 8px 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+
+.explore {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+.explore-wrapper:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255, 0.05);
+    border: 1px solid rgb(255, 255, 255, 0.2);
+}   
+
+.explore-img {
+    width: 10px;
+}
+
+/* FOOD SECTION */
+.design {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.design-text-wrapper {
+    background-color: #fff;
+    padding: 80px 0;
+    display: grid;
+    gap: 25px;
+    place-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding-left: 40px;
+}
+
+.design-title {
+    color: #b2454a;
+    font-weight: 500;
+}
+
+.food-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.food-para {
+    color: #6a6a6a;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.design-img-wrapper {
+    background-image: url(assets/japanese_sushi.png);
+    background-color: #fff0dd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 70px;
+    display: grid;
+    place-items: center;
+}
+
+.design-img-wrapper2 {
+    background-image: url(assets/japanese_drinks.png);
+    background-color: #fff0dd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 70px 0;
+    display: grid;
+    place-items: center;
+}
+
+.check-wrapper {
+    background-color: #b2454a;
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.design-img {
+    width: 120px;
+}
+
+.food-menu-listing {
+    display: grid;
+    grid-template-columns: 150px 150px;
+}
+
+.menu-listing {
+    display: grid;
+    gap: 10px;
+}
+
+.menu-list-item {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    font-size: 0.8rem;
+    color: #6a6a6a;
+}
+
+.check-list-wrapper {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #b2454a;
+    display: grid;
+    place-items: center;
+}
+
+.check-list {
+    width: 8px;
+}
+
+.text1-img-wrapper {
+    position: absolute; 
+    left: 50%; 
+    top: 3%;
+}
+
+.text1-img {
+    height: 300px;
+}
+
+.img1-wrapper {
+    position: absolute;
+    bottom: 45.5%;
+    left: 55%;
+}
+
+.img1 {
+    width: 400px;
+}
+
+.text2-img-wrapper {
+    position: absolute;
+    left: 49.8%;
+    top: 60%;
+}
+
+.text2-img {
+    height: 300px;
+}
+
+.img2-wrapper {
+    position: absolute;
+    top: 52%;
+    right: 55%;
+}
+
+.img2 {
+    width: 400px;
+}
+
+.discover {
+    position: absolute;
+    left: 46%;
+    top: 47.5%;
+    /* right: 30%; */
+    height: 80px;
+    width: 80px;
+    background-color: #000;
+    color: #c6c6c6;
+    display: grid;
+    place-content: center;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* INBOX SECTION */
+.inbox-title {
+    font-size: 3.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.inbox-text {
+    color: #cdcbcb;
+    font-size: 0.8rem;
+}
+
+.inbox-input input {
+    width: 300px;
+    height: 3rem;
+    background-color: rgb(255, 255, 255, 0.05);
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    border-radius: 40px;
+    display: block;
+    padding-left: 20px;
+    color: #cdcbcb;
+    font-size: 0.9rem;
+}
+
+.inbox-input input:focus {
+    outline: none;
+}
+
+.inbox-input input::placeholder {
+    color: #cdcbcb;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.inbox-input {
+    position: relative;
+}
+
+.inbox-input button {
+    position: absolute;
+    top: 11%;
+    right: 0;
+    background-color: #000;
+    color: #cdcbcb;
+    font-size: 0.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 8px 18px;
+    margin-right: 7px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* FOOTER SECTION */
+.footer-logo {
+    display: flex;
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.footer-logo .footer-logo-red {
+    color: #b2454a;
+}
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.footer-links {
+    /* align-items: center;
+    justify-content: space-between;
+    width: 15%; */
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+
+.footer-item {
+    display: grid;
+    place-items: center;
+    height: 22px;
+    width: 22px;
+    background-color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.footer-img {
+    width: 10px;
+    height: auto;
+}
+
+.fb-footer-img {
+    width: 7px;
+}
